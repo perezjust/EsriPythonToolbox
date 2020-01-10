@@ -5,12 +5,12 @@ import json
 
 compname = os.getenv('COMPUTERNAME')
 
-if compname == 'AWS0ISPV2' or compname == 'AWS0TSPV1A':
-	sys.path.append(r"\\boardwalk.corp\Global\AppData\GIS\Cloud\Applications\Boardwalk\GISCommon\PROD")
-elif compname == 'AWS0ISQV2' or compname == 'AWS0TSQV1A':
-	sys.path.append(r"\\boardwalk.corp\Global\AppData\GIS\Cloud\Applications\Boardwalk\GISCommon\QA")
+if compname == 'AWSPRODBOX1' or compname == 'AWSPRODBOX2':
+	sys.path.append(r"\\some\directory\PROD")
+elif compname == 'AWSQABOX1' or compname == 'AWSQABOX2':
+	sys.path.append(r"\\some\directory\QA")
 else:
-	sys.path.append(r"\\boardwalk.corp\Global\AppData\GIS\Cloud\Applications Delivery\Boardwalk\GISCommon\DEV")
+	sys.path.append(r"\\some\directory\DEV")
 
 
 
